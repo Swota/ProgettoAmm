@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang='it'>
+    <head>
+        <title>NerdBook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrea Cardias">
+        <meta name="description" content="Progetto Amministrazione di Sistemi: NerdBook">
+        <meta name="keywords" content="NerdBook social nerd">
+    </head>
+
+    <body>
+        <!--header contenente in titolo della pagina-->
+        <header>
+            <div id="title">
+                NerdBook - Il nuovo social per i piccoli Nerd
+            </div>
+        </header>
+
+        <!--Barra di navigazione tra le pagine del sito-->
+        <nav>
+            <ol>
+                <li><a href="descrizione.html">Pagina Descrizione Social</a></li>
+                <li><a href="login.html">Effettua il login</a></li>
+            </ol>
+        </nav>
+        <div id="divBody">
+            
+            <!--Contenuti della pagina-->
+            
+            <div id='form_dati_profilo'>
+            <h2>Inserisci i tuoi Dati:</h2>
+            
+            <!--Form di registrazione-->
+            
+            <form action="servlet.java" method="get">
+                <p id="generalita">Nome:
+                    <input type="text" name="name" id="name" value="name">
+                    Cognome:
+                    <input type="text" name="surname" id="surname" value="surname">
+                </p>
+                <p id="immagine">Url immagine profilo:
+                    <input type="url" name="img_profile">
+                </p>
+                <p id="nascita">Data di nascita:
+                    <input type="date" name="nascita">
+                </p>
+                <p id="frase">Frase di presentazione:
+                    <textarea name="frase_presentazione" id="frase_presentazione"></textarea>
+                </p>
+                <p id="pswd_e_conferma">Password: 
+                    <input type="password" name="pswd" id="pswd" value="oscurato">
+                    Conferma Password: 
+                    <input type="password" name="conferma_pswd" id="onferma_pswd" value="oscurato">
+                </p>
+                <p id="tasto">
+                    <button type="submit">Invia</button>
+                </p>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
