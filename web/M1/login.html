@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang='it'>
+    <head>
+        <title>NerdBook</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Andrea Cardias">
+        <meta name="description" content="Progetto Amministrazione di Sistemi: NerdBook">
+        <meta name="keywords" content="NerdBook social nerd">
+    </head>
+
+    <body>
+        <!--header contenente in titolo della pagina-->
+        <header>
+            <div id="title">
+                NerdBook - Il nuovo social per i piccoli Nerd
+            </div>
+        </header>
+
+        <!--Barra di navigazione tra le pagine del sito-->
+        <nav>
+            <ol>
+                <li><a href="descrizione.html">Pagina Descrizione Social</a></li>
+                <li><a href="profilo.html">Il tuo Profilo</a></li>
+                <li><a href="bacheca.html">Bacheca</a></li>
+            </ol>
+        </nav>
+        <div id="divBody">
+            <!--Contenuti della pagina-->
+            <div id='form_login'>
+            <h2>Effettua il Login</h2>
+            <form action="servlet.java" method="get">
+                <label for="corto">Username</label>
+                <input type="text" name="corto"
+                id="corto" value=" username" />
+                <label for="pswd">Password</label>
+                <input type="password" name="pswd" id="pswd" value="oscurato" />
+                <button type="submit">Invia</button>
+            </form>
+            </div>
+        </div>
+    </body>
+</html>
