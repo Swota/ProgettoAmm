@@ -4,6 +4,224 @@
 
 body{
     
-    background-color: #EDFFFF;
-    font: 17px/25px monospace;
+    /**caratteristiche sfondo pagine**/
+    background-image: url("../img/sfondo_anonymus.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+    /**caratteristiche testo pagine**/
+    text-align: justify;
+    font: 20px/30px Courier New;
+    color: limegreen;
+
+}
+
+header{
+    
+    z-index: -2;
+    /**caratteristiche sfondo header**/
+    background-image: url("../img/header2.jpg");
+    background-size:  cover;
+
+    /**caratteristiche testo header**/
+    padding-top: 20px;
+    margin-right: 20px;
+    text-align: right;
+    color: darkgreen;
+    
+    font: 50px/65px Impact, Charcoal;
+    font-weight: bold;
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 99.55%;
+    height: 100px;
+    
+    /**caratteristiche bordi header**/
+    margin-top: -14px;
+    left: 0;
+    border: 3px greenyellow;
+    border-radius: 8px;
+    border-top-style: solid;
+    border-right-style: solid;
+    border-left-style: solid;
+    border-bottom-style: dotted;
+    
+}
+
+#title{
+    margin-left: -100px;
+    margin-right: 10%;
+}
+
+nav ol{
+    z-index: -1;
+    position: fixed;
+    top: 85px;
+    width: 99.55%;
+    
+    list-style-type: none;
+    
+    border: 3px solid greenyellow;
+    border-radius: 0 0 8px 0px;
+    border-top-style: dotted;
+    
+    margin-top: -4px;
+    left: 0;
+    right: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left; 
+    border: 3px solid greenyellow;
+    border-radius: 50px;
+    height: 58px;
+}
+
+nav li:first-child{
+    margin-left: 55px;
+    margin-right: 55px;  
+}
+
+nav li:last-child{
+    float: right;
+    height: 58px;
+    font: 15px/15px Courier New;
+    width: 230px
+}
+
+
+nav li a {
+    display: block;
+    color: olive;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover:not(.active) {
+    background-color: black;
+    border-radius: 50px;
+}
+
+nav .active {
+    border-radius: 50px;
+    background-color: black;
+}
+
+nav a:link, a:visited {
+    color: #00FF00;
+}
+
+nav a:hover, a:active {
+    color: mediumseagreen;
+}
+
+H1{
+    font: monospace;
+    font-size: 2.5em;
+}
+
+H2{
+    font: monospace;
+    font-size: 1.8em;
+}
+
+H3{
+    font: monospace;
+    font-size: 1.2em;
+}
+
+#sidebar{
+
+    z-index: -1;
+    background-color: #333;
+    top: 148px;
+    margin-left: -8px;
+    width: 235px;
+    height: 80%;
+    font-size: 14px;
+    border: 3px solid greenyellow;
+    border-radius: 0 0 8px 8px;
+    border-top-style: none;
+    position: fixed;
+}
+
+#sidebar ul{
+    color: mediumseagreen;
+    margin-left: -2%;
+    margin-bottom: -3%;
+}
+
+#sidebar ul ul{
+    margin-top: -10px;
+    margin-left: -30px;
+}
+
+#divBody{
+    padding-right: 230px;
+    margin-left: 5%;
+    position: absolute;
+    top: 156px;
+    left: 250px;
+    bottom: 0;
+    overflow-y: scroll;
+    width: 65%;
+}
+
+form{
+    align-content: center;
+}
+
+.form_generico{
+    margin-top: 5%;
+    text-align: center;
+    background-color: #333;
+    border: 3px solid greenyellow;
+    border-radius: 8px;  
+    padding-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    margin-top: 75px;
+}
+
+#omino{
+    
+    width: 100px;
+    height: 80px;
+}
+
+.form_generico label{
+    display: inline-block;
+    width: 300px;
+}
+
+.form_generico input{
+    width: 300px;
+}
+
+.form_generico textArea{
+    width: 300px;
+}
+
+.form_generico button{
+    width: 350px;
+    height: 20px;
+    border-bottom: green;
+    border-radius: 8px;
+}
+
+#micro_foto_profilo{
+    
+    height: 58px;
+    width: 58px;
+    border-image: 1;
+    border-radius: 50px 0 0 50px; 
+    
 }

@@ -15,30 +15,51 @@
         <!--header contenente in titolo della pagina-->
         <header>
             <div id="title">
-                NerdBook - Il nuovo social per i piccoli Nerd
+                NerdBook
             </div>
         </header>
 
         <!--Barra di navigazione tra le pagine del sito-->
         <nav>
             <ol>
-                <li><a href="descrizione.html">Pagina Descrizione Social</a></li>
-                <li><a href="profilo.html">Il tuo Profilo</a></li>
-                <li><a href="bacheca.html">Bacheca</a></li>
+                <li><a href="descrizione.html">NerdBook</a></li>
+                <li><a href="login.html">Log in<br>-----</a></li>
             </ol>
         </nav>
+        
+        <!--Barra di navigazione verticale-->
+        <div id="sidebar">
+            <ul id="funzioni_sidB">
+                <li><h2>Persone</h2>
+                    <ul>
+                        <li> <a href="">Tizio Unknow</a></li>
+                        <li> <a href="">Caio Sconosciuto</a></li>
+                        <li> <a href="">Sempronio unknow</a></li>
+                    </ul>
+                </li>
+                <li><h2>Gruppi</h2>
+                    <ul>
+                        <li> <a href="">Pastorizia Never Dies</a></li>
+                        <li> <a href="">Ignoranza Pura</a></li>
+                        <li> <a href="">MSI software</a></li>
+                    </ul>
+                </li>
+                
+            </ul>
+        </div>
+        
         <div id="divBody">
             <!--Contenuti della pagina-->
-            <div id='form_login'>
-            <h2>Effettua il Login</h2>
-            <form action="servlet.java" method="get">
-                <label for="corto">Username</label>
-                <input type="text" name="corto"
-                id="corto" value=" username" />
-                <label for="pswd">Password</label>
-                <input type="password" name="pswd" id="pswd" value="oscurato" />
-                <button type="submit">Invia</button>
-            </form>
+            <div class="form_generico">
+                <h2>Effettua il Login</h2>
+                <form action="servlet.java" method="get">
+                    <label for="corto">Username</label>
+                    <input type="text" name="corto"
+                    id="corto" value=" username" />
+                    <label for="pswd">Password</label>
+                    <input type="password" name="pswd" id="pswd" value="oscurato" />
+                    <button type="submit">Invia</button>
+                </form>
             </div>
         </div>
     </body>
