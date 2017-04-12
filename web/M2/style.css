@@ -18,7 +18,6 @@ body{
 }
 
 header{
-    
     z-index: -2;
     /**caratteristiche sfondo header**/
     background-image: url("../img/header2.jpg");
@@ -250,7 +249,7 @@ form{
 }
 
 
-#mini_foto_profilo{
+.mini_foto_profilo{
     
     height: 10%;
     width: 10%;
