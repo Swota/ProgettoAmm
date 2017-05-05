@@ -2,20 +2,21 @@
 <html lang='it'>
     <head>
         <title>NerdBook</title>
-        <meta charset="UTF-8">
+        <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+        <%@page contentType="text/html" pageEncoding="UTF-8"%>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="author" content="Andrea Cardias">
         <meta name="description" content="Progetto Amministrazione di Sistemi: NerdBook">
         <meta name="keywords" content="NerdBook social nerd">
         <!--aggiunto il collegamento alla pagina di css che gestisce lo stile del layout-->
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+        <link rel="stylesheet" type="text/css" href="M2/style.css" media="screen"> 
     </head>
 
     <body>
         <!--header contenente in titolo della pagina-->
         <header>
             <div id="title">
-                NerdBook<img alt="logo" class="logo" src="../img/logo.jpg">
+                NerdBook<img alt="logo" class="logo" src="img/logo.jpg">
             </div>
         </header>
 
@@ -75,7 +76,7 @@
                         <p id='storia_social'> Originato da un progetto universitario assegnato nel corso di "Amministrazione di Sistemi", materia che tratta del web-desing e dello sviluppo delle pagine web.. Da questo naque l'idea! Da una consegna, che ha ispirato un social particolare mirato e dedicato ai Nerd! Si esatto, tu che stai leggendo questo e ti stai per iscrivere sei un nerd! Ammettilo! E ora? che aspetti? Iscriviti e scopri quante persone condividono il tuo mondo stile Matrix! Buon divertimento! Lo Staff!</p>
                 </div>
 
-                <!--Funzionalità del social-->
+                <!--FunzionalitÃ  del social-->
                 <div id='funz'>
                     <h2>Funzionalit&agrave;:</h2>
                         <h3 id='funz_profilo'>Profilo Personale</h3>

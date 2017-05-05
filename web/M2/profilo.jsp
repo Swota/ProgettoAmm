@@ -8,22 +8,24 @@
         <meta name="description" content="Progetto Amministrazione di Sistemi: NerdBook">
         <meta name="keywords" content="NerdBook social nerd">
         <!--aggiunto il collegamento alla pagina di css che gestisce lo stile del layout-->
-        <link rel="stylesheet" type="text/css" href="style.css" media="screen"> 
+        <link rel="stylesheet" href="M2/style.css" media="screen"> 
     </head>
 
     <body>
         <!--header contenente in titolo della pagina-->
         <header>
             <div id="title">
-                NerdBook<img alt="logo" class="logo" src="../img/logo.jpg">
+                NerdBook<img alt="logo" class="logo" src="img/logo.jpg">
             </div>
         </header>
 
         <!--Barra di navigazione tra le pagine del sito-->
         <nav>
             <ol>
-                <li><a href="descrizione.html">NerdBook</a></li>
-                <li><a class="active" href="login.html">Login<br>-----</a></li>
+                <li><a href="M2/descrizione.html">NerdBook</a></li>
+                <li><a class="active" href="M2/profilo.html">Profilo</a></li>
+                <li><a href="M2/bacheca.html">Bacheca</a></li>
+                <li><img alt="foto_profilo" id="micro_foto_profilo" src="img/profiloAndreaCardias.jpg" style="float:left"><a href="">Andrea Cardias<br>Logout</a></li>
             </ol>
         </nav>
         
@@ -49,16 +51,27 @@
         </div>
         
         <div id="divBody">
+            
             <!--Contenuti della pagina-->
             <div class="form_generico">
-                <h2>Effettua il Login</h2>
+                <div id="immaginina"><img alt="immaginina" id="omino" src="img/omino.png"><h2>Inserisci i tuoi Dati:</h2></div>
+                <!--Form di registrazione-->
                 <form action="servlet.java" method="get">
-                    <label for="corto">Username</label>
-                    <input type="text" name="corto"
-                           id="corto" value=" username" /><br>
-                    <label for="pswd">Password</label>
-                    <input type="password" name="pswd" id="pswd" value="oscurato" /><br>
-                    <button type="submit">Invia</button>
+                    <label id="nome">Nome:</label>
+                        <input type="text" name="name" id="name" value="name"><br> 
+                        <label id="cognome">Cognome:</label>
+                        <input type="text" name="surname" id="surname" value="surname"><br>
+                    <label id="nascita">Data di nascita:</label>
+                    <input type="date" name="nascita"><br>
+                    <label id="frase">Presentazione:</label>
+                        <textarea name="frase_presentazione" id="frase_presentazione"></textarea><br>
+                        <label id="password">Password: </label>
+                        <input type="password" name="pswd" id="pswd" value="oscurato"><br>
+                        <label id="conferma">Conferma Password:</label>
+                        <input type="password" name="conferma_pswd" id="conferma_pswd" value="oscurato"><br>
+                    <label id="tasto">
+                        <button type="submit">Invia</button>
+                    </label><br>
                 </form>
             </div>
         </div>
